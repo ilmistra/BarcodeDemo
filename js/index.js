@@ -20,7 +20,6 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        scan();
     },
     // Bind Event Listeners
     //
@@ -38,6 +37,7 @@ var app = {
     // function, we must explicity call `app.receivedEvent(...);`
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        app.scan();
     },
 
     // Update DOM on a Received Event
