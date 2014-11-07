@@ -49,11 +49,11 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
-        console.log('Received Event: ' + id);
+        //console.log('Received Event: ' + id);
     },
 
     scan: function() {
-        console.log('scanning');
+        //console.log('scanning');
         
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
@@ -79,7 +79,7 @@ var app = {
             */
 
         }, function (error) { 
-            console.log("Scanning failed: ", error); 
+            //console.log("Scanning failed: ", error); 
         } );
     },
 
